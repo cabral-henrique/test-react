@@ -1,0 +1,68 @@
+@import "style.toggle.scss";
+@import "../../Assets/Styles/common/_variables.scss";
+
+.bgMenu {
+  .containerMenu {
+    display: flex;
+    position: relative;
+    .logoMain {
+      img {
+        width: 100px;
+        @media screen and (max-width: 1024px) {
+          float: left !important;
+        }
+      }
+    }
+
+    .navMain {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        transition: 0.3s;
+        a {
+          padding: 10px 20px;
+          font-size: 24px;
+          color: $color-primary;
+          transition: 0.3s;
+          font-family: "Jaldi", sans-serif;
+          font-weight: 400;
+        }
+
+        @media screen and (max-width: 1024px) {
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: $color-primary;
+          z-index: 999;
+          transition: 0.3s;
+          transform: translateY(-100%);
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 100px 2px;
+          &.active {
+            transform: translateY(0);
+          }
+          a {
+            color: white;
+            width: 100%;
+            &:hover {
+              font-weight: 700;
+              transform: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.textMenu {
+  color: white;
+}

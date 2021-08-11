@@ -1,0 +1,118 @@
+p {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  &.title-content {
+    color: $color-primary;
+  }
+  &.title-section {
+    color: $color-primary;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 35px;
+  margin: 0;
+
+  @media screen and(min-width: 1024px) {
+    font-size: 56px;
+  }
+}
+h2,
+.h2 {
+  margin: 0;
+  font-size: 25px;
+  @media screen and(min-width: 1024px) {
+    font-size: 36px;
+  }
+}
+
+//Link
+a {
+  text-decoration: none;
+}
+
+//transformação da fonte
+.uppercase {
+  text-transform: uppercase !important;
+}
+.capitalize {
+  text-transform: capitalize !important;
+}
+.transform-none {
+  text-transform: none !important;
+}
+
+// alinhamento do texto
+.text-center {
+  text-align: center !important;
+}
+.text-justify {
+  text-align: justify !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-centered {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+// Weight
+.text-light {
+  font-weight: 100 !important;
+}
+.text-normal {
+  font-weight: 400 !important;
+}
+.text-semibold {
+  font-weight: 600 !important;
+}
+.text-bold {
+  font-weight: 700 !important;
+}
+
+// cores do texto
+.text-lgray {
+  color: $color-lgray !important;
+}
+.text-gray {
+  color: $color-gray !important;
+}
+.text-dark {
+  color: $color-dark !important;
+}
+.text-primary {
+  color: $color-primary;
+}
+
+.text-white {
+  color: white !important;
+}
+.text-black {
+  color: black !important;
+}
+
+.text-alert {
+  color: $color-alert !important;
+}
+.text-danger {
+  color: $color-danger !important;
+}
+.text-success {
+  color: $color-success !important;
+}

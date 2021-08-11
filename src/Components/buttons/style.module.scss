@@ -1,0 +1,22 @@
+@import "../../Assets/Styles/common/_variables.scss";
+
+.button {
+  font-weight: 600;
+  color: white;
+  padding: 5px 29px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 33px;
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  @media screen and(min-width: 768px) {
+    padding: 5px 47px;
+  }
+}

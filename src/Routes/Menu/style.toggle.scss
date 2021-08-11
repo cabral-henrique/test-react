@@ -1,0 +1,64 @@
+@import "../../Assets/Styles/common/_variables.scss";
+
+.menuToggle {
+  top: 60px;
+  left: 30px;
+  display: none;
+  line-height: (16px / 2);
+  position: absolute;
+  z-index: 9999;
+  outline: none;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  .bar {
+    position: absolute;
+    bottom: (16px / 2);
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    transition: top 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    background: $color-primary;
+    animation-delay: 0.3s;
+
+    &:first-child,
+    &:last-child {
+      position: absolute;
+    }
+
+    &:first-child {
+      top: -1px;
+    }
+
+    &:last-child {
+      bottom: 1px;
+    }
+  }
+
+  &.active {
+    .bar {
+      background: white;
+      &:first-child {
+        top: (2px + 5);
+        transform: rotate(-45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:last-child {
+        top: (2px + 5);
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+}

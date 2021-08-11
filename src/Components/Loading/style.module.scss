@@ -1,0 +1,11 @@
+@import "../../Assets/Styles/common/_variables.scss";
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  img {
+    max-width: 50px;
+  }
+}
